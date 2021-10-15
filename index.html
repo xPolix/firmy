@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+    <title>Index Example 1</title>
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/navbars/">
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+	
+  </head>
+  <body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-xl">
+      <a class="navbar-brand" href="#">Example.com.pl</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample07XL">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><font class="my_font">Strona Główna</font></a>
+          </li>
+		  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown07XL" data-bs-toggle="dropdown" aria-expanded="false"><font class="my_font">Województwa</font></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown07XL">
+              <li><a class="dropdown-item" href="#"><font class="my_font">Dolnoślaskie</font></a></li>
+              <li><a class="dropdown-item" href="#"><font class="my_font">Kujawsko-pomorskie</font></a></li>
+              <li><a class="dropdown-item" href="#"><font class="my_font">Lubelskie</font></a></li>
+              <li><a class="dropdown-item" href="#"><font class="my_font">Lubuskie</font></a></li>
+              <li><a class="dropdown-item" href="#"><font class="my_font">Łódzkie</font></a></li>
+              <li><a class="dropdown-item" href="#"><font class="my_font">Małopolskie</font></a></li>
+              <li><a class="dropdown-item" href="#"><font class="my_font">Opolskie</font></a></li>
+              <li><a class="dropdown-item" href="#"><font class="my_font">Podkarpackie</font></a></li>
+              <li><a class="dropdown-item" href="#"><font class="my_font">Podlaskie</font></a></li>
+              <li><a class="dropdown-item" href="#"><font class="my_font">Pomorskie</font></a></li>
+              <li><a class="dropdown-item" href="#"><font class="my_font">Śląskie</font></a></li>
+              <li><a class="dropdown-item" href="#"><font class="my_font">Świętokrzyskie</font></a></li>
+              <li><a class="dropdown-item" href="#"><font class="my_font">Warmińsko-mazurskie</font></a></li>
+              <li><a class="dropdown-item" href="#"><font class="my_font">Wielkopolskie</font></a></li>
+              <li><a class="dropdown-item" href="#"><font class="my_font">Zachodniopomorskie</font></a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown07XL" data-bs-toggle="dropdown" aria-expanded="false"><font class="my_font">Kategorie</font></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown07XL">
+              <li><a class="dropdown-item" href="#MainDiv"><font class="my_font">Kategoria 1</font></a></li>
+              <li><a class="dropdown-item" href="#"><font class="my_font">Kategoria 2</font></a></li>
+              <li><a class="dropdown-item" href="#"><font class="my_font">Kategoria 3</font></a></li>
+              <li><a class="dropdown-item" href="#"><font class="my_font">Kategoria 4</font></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#"><font class="my_font">Regulamin</font></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#"><font class="my_font">Kontakt</font></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!--
+  <div id="top_stuff" class="top_stuff">
+    <div id="logo" class="logo">
+	  <a href="">Example.com</a>
+	</div>
+    <ul class ="top_ul">
+      <li id="main_page" class="categories">
+		<a href=""><b>Strona Główna</b></a>
+		</li>
+		<li id="woj" class="categories">
+		  <div class="dropdown">
+			<button class="dropbtn"><b>Województwa ▼</b></button>
+				<div class="dropdown-content">
+					<a href="#">Dolnoślaskie</a>
+					<a href="#">Kujawsko-<br>pomorskie</a>
+					<a href="#">Lubelskie</a>
+					<a href="#">Lubuskie</a>
+					<a href="#">Łódzkie</a>
+					<a href="#">Małopolskie</a>
+					<a href="#">Opolskie</a>
+					<a href="#">Podkarpackie</a>
+					<a href="#">Podlaskie</a>
+					<a href="#">Pomorskie</a>
+					<a href="#">Śląskie</a>
+					<a href="#">Świętokrzyskie</a>
+					<a href="#">Warmińsko-<br>Mazurskie</a>
+					<a href="#">Wielkopolskie</a>
+					<a href="#">Zachodniopomorskie</a>
+				</div>
+		  </div>
+		</li>
+		
+		<li id="categories" class="categories">
+		  <div class="dropdown">
+			<button class="dropbtn"><b>Kategorie ▼</b></button>
+				<div class="dropdown-content">
+					<a href="#">Kategoria 1</a>
+					<a href="#">Kategoria 2</a>
+					<a href="#">Kategoria 3</a>
+					<a href="#">Kategoria 4</a>
+				</div>
+		  </div>
+		</li>
+		<li id="rules" class="categories">
+		<a href=""><b>Regulamin</b></a>
+		</li>
+    </ul>
+  
+  </div> -->
+  
+  <div id="search_div" class="container-xl search bg-white">
+		<p class="fs-1 my_font">Wyszukaj firmę</p>
+			<div class="input-group input-group-lg">
+				<input type="text" class="form-control">
+				<button class="btn btn-outline-dark" type="button" id="search_button">Szukaj</button>
+			</div>
+		<p class="fs-1 my_font"></p>
+  
+  
+  </div>
+  
+  
+  <div class="main_bg">
+  <div id="MainDiv" class="mainDiv">
+    <div id="title" class="title">
+      Znajdź firmę w wybranym regionie
+    </div>
+  
+	<ul id="columns" class="my_ul">
+	<li class="my_li">
+	<div class="scaleDiv" id="WojDiv1">
+	    <div class="WojDiv">
+		  <button class="wave-btn"> <font style="z-index:3;">Dolnoślaskie</font> </button>
+		</div>
+	</div>
+	</li>
+	<li class="my_li">
+	<div class="scaleDiv" id="WojDiv2">
+	    <div class="WojDiv">
+		  <button class="wave-btn"> <font style="z-index:3;">Kujawsko-pomorskie</font> </button>
+		</div>
+	</div>
+	</li>
+	<li class="my_li">
+	<div class="scaleDiv" id="WojDiv3">
+	    <div class="WojDiv">
+		  <button class="wave-btn"> <font style="z-index:3;">Lubelskie</font> </button>
+		</div>
+	</div>
+	</li>
+	<li class="my_li">
+	<div class="scaleDiv" id="WojDiv4">
+	    <div class="WojDiv">
+		  <button class="wave-btn"> <font style="z-index:3;">Lubuskie</font> </button>
+		</div>
+	</div>
+	</li>
+	<li class="my_li">
+	<div class="scaleDiv" id="WojDiv5">
+	    <div class="WojDiv">
+		  <button class="wave-btn"> <font style="z-index:3;">Łódzkie</font> </button>
+		</div>
+	</div>
+	</li>
+	<li class="my_li">
+	<div class="scaleDiv" id="WojDiv6">
+	    <div class="WojDiv">
+		  <button class="wave-btn"> <font style="z-index:3;">Małopolskie</font> </button>
+		</div>
+	</div>
+	</li>
+	<li class="my_li">
+	<div class="scaleDiv" id="WojDiv7">
+	    <div class="WojDiv">
+		  <button class="wave-btn"> <font style="z-index:3;">Mazowieckie</font> </button>
+		</div>
+	</div>
+	</li>
+	<li class="my_li">
+	<div class="scaleDiv" id="WojDiv8">
+	    <div class="WojDiv">
+		  <button class="wave-btn"> <font style="z-index:3;">Opolskie</font> </button>
+		</div>
+	</div>
+	</li>
+	<li class="my_li">
+	<div class="scaleDiv" id="WojDiv9">
+	    <div class="WojDiv">
+		  <button class="wave-btn"> <font style="z-index:3;">Podkarpackie</font> </button>
+		</div>
+	</div>
+	</li>
+	<li class="my_li">
+	<div class="scaleDiv" id="WojDiv10">
+	    <div class="WojDiv">
+		  <button class="wave-btn"> <font style="z-index:3;">Podlaskie</font> </button>
+		</div>
+	</div>
+	</li>
+	<li class="my_li">
+	<div class="scaleDiv" id="WojDiv11">
+	    <div class="WojDiv">
+		  <button class="wave-btn"> <font style="z-index:3;">Pomorskie</font> </button>
+		</div>
+	</div>
+	</li>
+	<li class="my_li">
+	<div class="scaleDiv" id="WojDiv12">
+	    <div class="WojDiv">
+		  <button class="wave-btn"> <font style="z-index:3;">Śląskie</font> </button>
+		</div>
+	</div>
+	</li>
+	<li class="my_li">
+	<div class="scaleDiv" id="WojDiv13">
+	    <div class="WojDiv">
+		  <button class="wave-btn"> <font style="z-index:3;">Swiętokrzyskie</font> </button>
+		</div>
+	</div>
+	</li>
+	<li class="my_li">
+	<div class="scaleDiv" id="WojDiv14">
+	    <div class="WojDiv">
+		  <button class="wave-btn"> <font style="z-index:3;">Warmińsko- mazurskie</font> </button>
+		</div>
+	</div>
+	</li>
+	<li class="my_li">
+	<div class="scaleDiv" id="WojDiv15">
+	    <div class="WojDiv">
+		  <button class="wave-btn"> <font style="z-index:3;">Wielkopolskie</font> </button>
+		</div>
+	</div>
+	</li>
+	<li class="my_li">
+	<div class="scaleDiv" id="WojDiv16">
+	    <div class="WojDiv">
+		  <button class="wave-btn"> <font style="z-index:3;">Zachodniopomorskie</font> </button>
+		</div>
+	</div>
+	</li>
+	</ul>
+	</div>
+	
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
