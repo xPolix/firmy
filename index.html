@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/navbars/">
     <!-- Bootstrap core CSS -->
-<link href="bootstrap.min.css" rel="stylesheet">
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -131,16 +131,14 @@
     </ul>
   
   </div> -->
-  
-  <div id="search_div" class="container-xl search bg-white">
+  <div class="px-4 pt-5 my-5 border-bottom">
+	<div id="search_div" class="container-xl search bg-white">
 		<p class="fs-1 my_font">Wyszukaj firmę</p>
 			<div class="input-group input-group-lg">
 				<input type="text" class="form-control">
 				<button class="btn btn-outline-dark" type="button" id="search_button">Szukaj</button>
 			</div>
-		<p class="fs-1 my_font"></p>
-  
-  
+	</div>
   </div>
   
   
@@ -264,8 +262,23 @@
 	</div>
 	</li>
 	</ul>
+	<br>
+	</div>
 	</div>
 	
-    <script src="bootstrap.bundle.min.js"></script>
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Strona Główna</a></li>
+      <li class="nav-item"><a href="#mainDiv" class="nav-link px-2 text-muted">Województwa</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Kategorie</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Regulamin</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Kontakt</a></li>
+    </ul>
+    <p class="text-center text-muted">&copy; 2021 Example Company, Inc</p>
+  </footer>
+</div>
+	
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
