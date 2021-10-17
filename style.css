@@ -23,7 +23,7 @@ html, body {
 }
 
 .background_image {
-  background-image: url("flowers.jpg");
+  background-image: url("city.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
